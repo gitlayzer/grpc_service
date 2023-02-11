@@ -1,0 +1,18 @@
+//  定义protoc的版本
+syntax = "proto3";
+// ../pb定义了生成的Go文件的位置，pb是go文件的包名
+option go_package = "../pb;pb";
+// 定义响应数据
+message MessageResponse {
+    string responseSomething = 1;
+}
+// 定义请求数据
+message MessageRequest {
+    string requestSomething = 1;
+}
+
+// 定义服务
+service MessageService {
+    // 定义一个rpc方法，请求数据为MessageRequest，响应数据为MessageResponse
+    rpc Send(MessageRequest) returns (MessageResponse) {}
+}
