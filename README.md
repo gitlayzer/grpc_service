@@ -1,6 +1,6 @@
 ## gRPC学习文档
 
-![](https://img0.baidu.com/it/u=3013497722,861933458&fm=253&fmt=auto&app=138&f=PNG?w=879&h=373)
+![image](https://user-images.githubusercontent.com/77761224/218545624-4d8ccfa9-a4fb-4205-bf53-b365557b61fa.png)
 
 ### 1：什么是gRPC
 
@@ -27,7 +27,7 @@ gRPC是Google开源的一个RPC框架和库，支持多语言之间的通信，�
 
 ### 4：gRPC通信流程
 
-![](https://img2.baidu.com/it/u=3122499208,1032512809&fm=253&fmt=auto&app=138&f=JPEG?w=759&h=500)
+![image](https://user-images.githubusercontent.com/77761224/218545684-e8ac5748-723b-4e7f-9b94-97e8efb9ad0c.png)
 
 ```shell
 1：客户端（gRPC Stub）调用 A 方法，发起RPC调用，对方请求信息使用Protobuf进行对象系列化压缩（IDL）
